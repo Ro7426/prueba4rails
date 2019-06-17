@@ -1,0 +1,29 @@
+<div class="jumbotron">
+  <h1 class="text-center font-weight-bold" style="font-size: 2.5em">TAREAS DIECIOCHERAS</h1>
+</div>
+<div class="container-fluid">
+  <% @tasks.each do |task| %>
+    <div class="col-md-4 col-lg-3 col-sm-12 float-left">
+      <div class="card mb-2 mt-2">
+        <%= image_tag task.photo, class:'card-img-top' %>
+        <div class="card-body">
+          <h5 class="card-title text-center"><%= task.name %></h5>
+          <a href="#" class="btn btn-primary">listo</a>
+           <a href="#" class="btn btn-danger">no listo</a>
+          
+        
+            
+          
+        </div>
+        <div class="btn-group align-self-center mb-2">
+         
+            
+              
+        </div>
+      </div>
+    </div>
+    <div class="w-100" style="margin-top: 3rem"> </div>
+  <% end %>
+</div>
+
+
